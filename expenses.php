@@ -12,7 +12,7 @@ require_once "config.php";
 // Handle Add Expense Form Submission
 $success_msg = $error_msg = "";
 if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_expense'])) {
-    $title = trim($_POST['title']);
+    $title = trim($_POST['items']);
     $category = trim($_POST['category']);
     $amount = trim($_POST['amount']);
     $expense_date = trim($_POST['expense_date']);
